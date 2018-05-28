@@ -112,8 +112,7 @@ the specific language governing permissions and limitations under the License.
 
                 <category android:name="android.intent.category.DEFAULT" />
 
-                <data android:mimeType="vnd.android.cursor.item/vnd.odk.form" />
-                <data android:mimeType="vnd.android.cursor.item/vnd.odk.instance" />
+
             </intent-filter>
         </activity>
         <activity
@@ -136,8 +135,7 @@ the specific language governing permissions and limitations under the License.
 
                 <category android:name="android.intent.category.DEFAULT" />
 
-                <data android:mimeType="vnd.android.cursor.dir/vnd.odk.instance" />
-            </intent-filter>
+        </intent-filter>
         </activity>
         <activity android:name=".activities.FormChooserList">
             <intent-filter>
@@ -147,7 +145,6 @@ the specific language governing permissions and limitations under the License.
 
                 <category android:name="android.intent.category.DEFAULT" />
 
-                <data android:mimeType="vnd.android.cursor.dir/vnd.odk.form" />
             </intent-filter>
         </activity>
         <activity android:name=".activities.FormDownloadList" />
@@ -195,7 +192,7 @@ the specific language governing permissions and limitations under the License.
         <activity android:name=".activities.BearingActivity" />
         <activity
             android:name=".activities.SplashScreenActivity"
-            android:theme="@android:style/Theme.Dialog">
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
