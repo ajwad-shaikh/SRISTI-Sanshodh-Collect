@@ -31,4 +31,12 @@ limitations under the License.
         android:title="@string/admin_preferences"
         app:showAsAction="never"/>
 
+    <item android:id="@+id/sgn_out"
+        android:title="@string/sign_out"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/disco_btn"
+        android:title="@string/disconnect"
+        app:showAsAction="never"/>
+
 </menu>

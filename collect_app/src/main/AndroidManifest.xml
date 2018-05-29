@@ -96,7 +96,13 @@ the specific language governing permissions and limitations under the License.
 
         <activity
             android:name=".activities.MainMenuActivity"
-            android:configChanges="locale|orientation|screenSize" />
+            android:configChanges="locale|orientation|screenSize">
+        <intent-filter>
+            <action android:name="org.odk.collect.android.activities.MainMenuActivity" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        </activity>
+
         <activity
             android:name=".activities.ScannerWithFlashlightActivity"
             android:screenOrientation="portrait"
@@ -115,6 +121,11 @@ the specific language governing permissions and limitations under the License.
 
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activities.LoginActivity"
+            android:theme="@style/Theme.AppCompat.DayNight">
+        </activity>
+
         <activity
             android:name=".activities.NotificationActivity"
             android:excludeFromRecents="true"

@@ -26,6 +26,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
 import android.preference.PreferenceManager;
+import android.support.annotation.NonNull;
 import android.support.v7.widget.Toolbar;
 import android.text.InputType;
 import android.view.LayoutInflater;
@@ -41,6 +42,11 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.google.android.gms.analytics.GoogleAnalytics;
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 
 import org.odk.collect.android.R;
 import org.odk.collect.android.application.Collect;
@@ -79,6 +85,7 @@ import timber.log.Timber;
 public class MainMenuActivity extends CollectAbstractActivity {
 
     private static final int PASSWORD_DIALOG = 1;
+    private GoogleSignInClient mGoogleSignInClient;
 
     private static final boolean EXIT = true;
     // buttons
@@ -114,6 +121,19 @@ public class MainMenuActivity extends CollectAbstractActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_menu);
         initToolbar();
+
+        // [START configure_signin]
+        // Configure sign-in to request the user's ID, email address, and basic
+        // profile. ID and basic profile are included in DEFAULT_SIGN_IN.
+        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestEmail()
+                .build();
+        // [END configure_signin]
+
+        // [START build_client]
+        // Build a GoogleSignInClient with the options specified by gso.
+        mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
+        // [END build_client]
 
         // enter data button. expects a result.
         enterDataButton = findViewById(R.id.enter_data);
@@ -193,7 +213,7 @@ public class MainMenuActivity extends CollectAbstractActivity {
                             .getDefaultSharedPreferences(MainMenuActivity.this);
                     String protocol = sharedPreferences.getString(
                             PreferenceKeys.KEY_PROTOCOL, getString(R.string.protocol_odk_default));
-                    Intent i = null;
+                    Intent i;
                     if (protocol.equalsIgnoreCase(getString(R.string.protocol_google_sheets))) {
                         if (PlayServicesUtil.isGooglePlayServicesAvailable(MainMenuActivity.this)) {
                             i = new Intent(getApplicationContext(),
@@ -325,7 +345,7 @@ public class MainMenuActivity extends CollectAbstractActivity {
 
     private void initToolbar() {
         Toolbar toolbar = findViewById(R.id.toolbar);
-        setTitle(getString(R.string.main_menu));
+        setTitle(getString(R.string.app_name));
         setSupportActionBar(toolbar);
     }
 
@@ -456,6 +476,12 @@ public class MainMenuActivity extends CollectAbstractActivity {
                         .logAction(this, "onOptionsItemSelected",
                                 "MENU_PREFERENCES");
                 startActivity(new Intent(this, PreferencesActivity.class));
+                return true;
+            case R.id.sgn_out:
+                signOut();
+                return true;
+            case R.id.disco_btn:
+                revokeAccess();
                 return true;
             case R.id.menu_admin_preferences:
                 Collect.getInstance().getActivityLogger()
@@ -699,6 +725,40 @@ public class MainMenuActivity extends CollectAbstractActivity {
             super.onChange(selfChange);
             handler.sendEmptyMessage(0);
         }
+    }
+
+    // [START signOut]
+    private void signOut() {
+        mGoogleSignInClient.signOut()
+                .addOnCompleteListener(this, new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        // [START_EXCLUDE]
+                        goBack();
+                        // [END_EXCLUDE]
+                    }
+                });
+    }
+    // [END signOut]
+
+    // [START revokeAccess]
+    private void revokeAccess() {
+        mGoogleSignInClient.revokeAccess()
+                .addOnCompleteListener(this, new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        // [START_EXCLUDE]
+                        goBack();
+                        // [END_EXCLUDE]
+                    }
+                });
+    }
+    // [END revokeAccess]
+
+    private void goBack() {
+        Intent intent = new Intent(MainMenuActivity.this, LoginActivity.class);
+        startActivity(intent);
+        finish();
     }
 
 }

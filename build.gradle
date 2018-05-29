@@ -32,7 +32,7 @@ configurations.all {
 ext {
     // Play Services is a big download so it should only be upgraded if necessary and after
     // community discussion and a warning period.
-    playServicesVersion = '10.0.1'
+    playServicesVersion = '15.0.1'
 
     supportLibraryVersion = '27.1.1'
     leakyCanaryVersion = '1.5.4'

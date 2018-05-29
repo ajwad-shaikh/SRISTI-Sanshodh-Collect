@@ -129,6 +129,11 @@
     <string name="send_data">Send Finalized Form</string>
     <string name="send_data_button">Send Finalized Form (%s)\u200E</string>
     <string name="send_selected_data">Send Selected</string>
+    <string name="sign_out">Sign Out</string>
+    <string name="signed_out">Signed Out Successfully!</string>
+    <string name="sign_in">Sign In</string>
+    <string name="signed_in_fmt">Signed in as: %s</string>
+    <string name="disconnect">Disconnect</string>
     <string name="view_sent_forms">View Sent Form</string>
     <string name="view_sent_forms_button">View Sent Form (%s)\u200E</string>
     <string name="server_auth_credentials">Invalid username or password for server: %s</string>
