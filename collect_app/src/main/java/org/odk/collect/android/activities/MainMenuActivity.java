@@ -43,6 +43,7 @@ import android.widget.TextView;
 
 import com.google.android.gms.analytics.GoogleAnalytics;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -107,6 +108,7 @@ public class MainMenuActivity extends CollectAbstractActivity {
     private Cursor viewSentCursor;
     private IncomingHandler handler = new IncomingHandler(this);
     private MyContentObserver contentObserver = new MyContentObserver();
+    private TextView mStatusTextView;
 
     // private static boolean DO_NOT_EXIT = false;
 
@@ -121,6 +123,7 @@ public class MainMenuActivity extends CollectAbstractActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_menu);
         initToolbar();
+        mStatusTextView = findViewById(R.id.hello_user);
 
         // [START configure_signin]
         // Configure sign-in to request the user's ID, email address, and basic
@@ -134,6 +137,10 @@ public class MainMenuActivity extends CollectAbstractActivity {
         // Build a GoogleSignInClient with the options specified by gso.
         mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
         // [END build_client]
+
+        GoogleSignInAccount account = GoogleSignIn.getLastSignedInAccount(this);
+        if(account!=null)
+            mStatusTextView.setText(getString(R.string.signed_in_fmt, account.getDisplayName()));
 
         // enter data button. expects a result.
         enterDataButton = findViewById(R.id.enter_data);
