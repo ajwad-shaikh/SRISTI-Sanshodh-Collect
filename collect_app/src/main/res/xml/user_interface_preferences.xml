@@ -23,7 +23,7 @@
         android:entryValues="@array/navigation_entry_values"
         android:key="navigation"
         android:title="@string/navigation" />
-    <CheckBoxPreference
+    <!--<CheckBoxPreference
         android:key="showSplash"
         android:summary="@string/show_splash_summary"
         android:title="@string/show_splash_title" />
@@ -32,7 +32,7 @@
         android:key="splashPath"
         android:layout="?android:attr/preferenceLayoutChild"
         android:title="@string/splash_path" />
-
+-->
     <PreferenceCategory
         android:key="@string/map_preferences"
         android:title="@string/map_preferences">

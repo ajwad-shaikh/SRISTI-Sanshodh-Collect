@@ -8,9 +8,6 @@ import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
-import com.google.android.gms.tasks.Task;
-
-import org.odk.collect.android.R;
 
 public class GoogleSignInResponder extends Activity {
 
@@ -49,7 +46,7 @@ public class GoogleSignInResponder extends Activity {
             UserName = account.getDisplayName();
             // [END on_start_sign_in]
         }
-        String mAnswer = "response from third party app";
+        //String mAnswer = "response from third party app";
         Intent intent = new Intent();
         intent.putExtra("value", UserName);
         setResult(RESULT_OK, intent);

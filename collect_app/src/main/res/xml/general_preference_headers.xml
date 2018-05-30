@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <preference-headers xmlns:android="http://schemas.android.com/apk/res/android">
-    <header
+    <!--<header
         android:fragment="org.odk.collect.android.preferences.ServerPreferences"
         android:icon="@drawable/ic_cloud"
         android:key="protocol"
-        android:title="@string/server_settings_title" />
+        android:title="@string/server_settings_title" />-->
     <header
         android:fragment="org.odk.collect.android.preferences.UserInterfacePreferences"
         android:icon="@drawable/ic_phonelink_setup"

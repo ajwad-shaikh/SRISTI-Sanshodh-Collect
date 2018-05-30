@@ -15,7 +15,7 @@
         android:id="@+id/menu_sort"
         android:icon="@drawable/ic_sort"
         android:title="@string/sort_the_list"
-        app:showAsAction="always"/>
+        app:showAsAction="ifRoom"/>
 
     <item
         android:id="@+id/menu_filter"
