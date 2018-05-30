@@ -159,8 +159,10 @@ public class LoginActivity extends Activity implements View.OnClickListener {
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.sign_in_button:
-                signIn();
+                signIn() ;
                 break;
             }
     }
+
+    // TODO: Configure Intent to give account name as string output. Refer Page 401 of ODK Documentation
 }

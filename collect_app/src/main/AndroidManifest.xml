@@ -201,6 +201,13 @@ the specific language governing permissions and limitations under the License.
             android:name=".activities.GeoTraceGoogleMapActivity"
             android:configChanges="orientation" />
         <activity android:name=".activities.BearingActivity" />
+
+        <activity android:name=".activities.GoogleSignInResponder">
+            <intent-filter>
+                <action android:name="org.ODK.COLLECT" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".activities.SplashScreenActivity"
             android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen">
