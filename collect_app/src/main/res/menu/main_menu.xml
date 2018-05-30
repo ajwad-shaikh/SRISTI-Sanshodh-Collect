@@ -21,7 +21,7 @@ limitations under the License.
         android:title="@string/about_preferences"
         app:showAsAction="never"/>
 
-    <item
+    <!--<item
         android:id="@+id/menu_general_preferences"
         android:title="@string/general_preferences"
         app:showAsAction="never"/>
@@ -30,6 +30,7 @@ limitations under the License.
         android:id="@+id/menu_admin_preferences"
         android:title="@string/admin_preferences"
         app:showAsAction="never"/>
+        -->
 
     <item android:id="@+id/sgn_out"
         android:title="@string/sign_out"

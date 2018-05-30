@@ -477,20 +477,20 @@ public class MainMenuActivity extends CollectAbstractActivity {
                                 "MENU_ABOUT");
                 startActivity(new Intent(this, AboutActivity.class));
                 return true;
-            case R.id.menu_general_preferences:
+            /*case R.id.menu_general_preferences:
                 Collect.getInstance()
                         .getActivityLogger()
                         .logAction(this, "onOptionsItemSelected",
                                 "MENU_PREFERENCES");
                 startActivity(new Intent(this, PreferencesActivity.class));
-                return true;
+                return true;*/
             case R.id.sgn_out:
                 signOut();
                 return true;
             case R.id.disco_btn:
                 revokeAccess();
                 return true;
-            case R.id.menu_admin_preferences:
+            /*case R.id.menu_admin_preferences:
                 Collect.getInstance().getActivityLogger()
                         .logAction(this, "onOptionsItemSelected", "MENU_ADMIN");
                 String pw = adminPreferences.getString(
@@ -502,7 +502,7 @@ public class MainMenuActivity extends CollectAbstractActivity {
                     Collect.getInstance().getActivityLogger()
                             .logAction(this, "createAdminPasswordDialog", "show");
                 }
-                return true;
+                return true;*/
         }
         return super.onOptionsItemSelected(item);
     }
