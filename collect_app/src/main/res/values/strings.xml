@@ -618,4 +618,6 @@
     <string name="hide_old_form_versions_setting_title">Hide old form versions</string>
     <string name="hide_old_form_versions_setting_summary">Only the newest version will appear in Fill Blank Form</string>
     <string name="hello_user">Hello User !</string>
+    <string name="form_format">Form Format Dashboard</string>
+    <string name="visit">Field Visit Dashboard</string>
 </resources>

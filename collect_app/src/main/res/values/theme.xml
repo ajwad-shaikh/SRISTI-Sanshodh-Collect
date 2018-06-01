@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
 
+    <style name="YourApplicationTheme" parent="android:style/Theme.NoTitleBar">
+        <item name="android:buttonStyle">@style/CustomButtonStyle</item>
+    </style>
+
     <!--Dark Theme-->
     <style name="DarkAppTheme" parent="BaseDarkAppTheme.Collect" />
 

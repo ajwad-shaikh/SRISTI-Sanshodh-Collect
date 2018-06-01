@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="0dp"
+    android:layout_marginLeft="0dp"
+    android:layout_marginRight="0dp"
+    android:layout_marginTop="0dp"
+    android:orientation="vertical"
+    android:padding="0dp">
+
+    <!-- Toolbar -->
+    <include layout="@layout/toolbar"/>
+
+    <include
+        layout="@layout/toolbar_action_bar_shadow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"/>
+
+    <TextView
+        android:id="@+id/main_menu_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:gravity="center"
+        android:padding="@dimen/padding_small"
+        android:text="@string/app_desc"
+        android:textColor="?primaryTextColor"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/hello_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/main_menu_header"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="1dp"
+        android:text="@string/hello_user"
+        android:textColor="?primaryTextColor"
+        android:textSize="21sp"
+        android:textStyle="italic"/>
+
+    <Button
+        android:id="@+id/enter_data"
+        style="@style/CustomButtonStyle"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_below="@+id/text1"
+        android:layout_marginStart="45dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/enter_data"
+        android:textSize="@dimen/button_text_size" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/hello_user"
+        android:text="@string/visit"
+        android:textSize="18sp"
+        android:textColor="?primaryTextColor"
+        android:padding="@dimen/padding_medium" />
+
+    <Button
+        android:id="@+id/review_data"
+        style="@style/CustomButtonStyle"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/enter_data"
+        android:layout_marginEnd="45dp"
+        android:layout_marginRight="45dp"
+        android:text="@string/review_data"
+        android:textSize="@dimen/button_text_size" />
+
+    <TextView
+        android:id="@+id/text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/send_data"
+        android:layout_marginTop="30dp"
+        android:text="@string/form_format"
+        android:textSize="18sp"
+        android:textColor="?primaryTextColor"
+        android:padding="@dimen/padding_medium"/>
+
+    <Button
+        android:id="@+id/send_data"
+        style="@style/CustomButtonStyle"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_alignStart="@+id/enter_data"
+        android:layout_alignLeft="@+id/enter_data"
+        android:layout_below="@+id/enter_data"
+        android:layout_marginTop="15dp"
+        android:text="@string/send_data"
+        android:textSize="@dimen/button_text_size" />
+
+    <Button
+        android:id="@+id/view_sent_forms"
+        style="@style/CustomButtonStyle"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_alignEnd="@+id/review_data"
+        android:layout_alignRight="@+id/review_data"
+        android:layout_alignTop="@+id/send_data"
+        android:layout_below="@+id/review_data"
+        android:text="@string/view_sent_forms"
+        android:textSize="@dimen/button_text_size" />
+
+    <Button
+        android:id="@+id/get_forms"
+        style="@style/CustomButtonStyle"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_alignStart="@+id/send_data"
+        android:layout_alignLeft="@+id/send_data"
+        android:layout_below="@+id/text2"
+        android:layout_marginTop="15dp"
+        android:text="@string/get_forms"
+        android:textSize="@dimen/button_text_size" />
+
+    <Button
+        android:id="@+id/manage_forms"
+        style="@style/CustomButtonStyle"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="@dimen/button_height"
+        android:layout_alignEnd="@+id/view_sent_forms"
+        android:layout_alignRight="@+id/view_sent_forms"
+        android:layout_alignTop="@+id/get_forms"
+        android:text="@string/manage_files"
+        android:textSize="@dimen/button_text_size" />
+
+
+</RelativeLayout>

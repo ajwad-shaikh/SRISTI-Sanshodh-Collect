@@ -51,4 +51,8 @@
     <dimen name="divier_height">3dp</dimen>
     <dimen name="divider_accidental_tap">8dp</dimen>
 
+    <dimen name="button_width">120dp</dimen>
+    <dimen name="button_height">60dp</dimen>
+    <dimen name="button_text_size">15sp</dimen>
+
 </resources>
