@@ -127,8 +127,8 @@
     <string name="save_enter_data_description">You are at the end of %s.</string>
     <string name="saving_form">Saving Form</string>
     <string name="sending_items">Sending %1$s of %2$s form(s)\u200E</string>
-    <string name="send_data">Send Finalized Form</string>
-    <string name="send_data_button">Send Finalized Form (%s)\u200E</string>
+    <string name="send_data">Send Done Form</string>
+    <string name="send_data_button">Send Done Form (%s)\u200E</string>
     <string name="send_selected_data">Send Selected</string>
     <string name="sign_out">Sign Out</string>
     <string name="signed_out">Signed Out Successfully!</string>

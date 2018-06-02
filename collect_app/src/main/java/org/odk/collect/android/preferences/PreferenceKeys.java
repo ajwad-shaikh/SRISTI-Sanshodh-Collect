@@ -70,6 +70,7 @@ public final class PreferenceKeys {
     public static final String NAVIGATION_SWIPE             = "swipe";
     public static final String CONSTRAINT_BEHAVIOR_ON_SWIPE = "on_swipe";
     public static final String NAVIGATION_BUTTONS           = "buttons";
+    public static final String NAVIGATION_BOTH              = "swipe_buttons";
     private static final String GOOGLE_MAPS                 = "google_maps";
     private static final String AUTOSEND_OFF                = "off";
     private static final String GUIDANCE_HINT_OFF           = "no";
@@ -112,7 +113,7 @@ public final class PreferenceKeys {
         hashMap.put(KEY_APP_THEME,                  Collect.getInstance().getString(R.string.app_theme_light));
         hashMap.put(KEY_APP_LANGUAGE,               "");
         hashMap.put(KEY_FONT_SIZE,                  Collect.DEFAULT_FONTSIZE);
-        hashMap.put(KEY_NAVIGATION,                 NAVIGATION_SWIPE);
+        hashMap.put(KEY_NAVIGATION,                 NAVIGATION_BOTH);
         hashMap.put(KEY_SHOW_SPLASH,                false);
         hashMap.put(KEY_SPLASH_PATH,                Collect.getInstance().getString(R.string.default_splash_path));
         hashMap.put(KEY_MAP_SDK,                    GOOGLE_MAPS);

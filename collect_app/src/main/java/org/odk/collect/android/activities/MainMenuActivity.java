@@ -121,7 +121,7 @@ public class MainMenuActivity extends CollectAbstractActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.test_menu);
+        setContentView(R.layout.test2_menu);
         initToolbar();
         mStatusTextView = findViewById(R.id.hello_user);
 

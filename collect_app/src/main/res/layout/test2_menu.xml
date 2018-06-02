@@ -21,31 +21,16 @@
         android:layout_below="@id/toolbar"/>
 
     <TextView
-        android:id="@+id/main_menu_header"
+        android:id="@+id/hello_user"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="75dp"
         android:gravity="center"
         android:padding="@dimen/padding_small"
-        android:text="@string/app_desc"
-        android:textColor="?primaryTextColor"
-        android:textSize="20sp"
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/hello_user"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_below="@+id/main_menu_header"
-        android:gravity="center"
-        android:paddingBottom="10dp"
-        android:paddingTop="1dp"
         android:text="@string/hello_user"
         android:textColor="?primaryTextColor"
         android:textSize="21sp"
-        android:textStyle="italic"/>
+        android:textStyle="bold|italic" />
 
     <Button
         android:id="@+id/enter_data"
@@ -57,7 +42,9 @@
         android:layout_marginLeft="45dp"
         android:layout_marginTop="15dp"
         android:text="@string/enter_data"
-        android:textSize="@dimen/button_text_size" />
+        android:textSize="@dimen/button_text_size"
+        android:drawableStart="@drawable/enter_data_ic"
+        android:drawableLeft="@drawable/enter_data_ic"/>
 
     <TextView
         android:id="@+id/text1"
@@ -65,7 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
-        android:layout_below="@+id/hello_user"
+        android:layout_below="@+id/get_forms"
         android:text="@string/visit"
         android:textSize="18sp"
         android:textColor="?primaryTextColor"
@@ -82,15 +69,17 @@
         android:layout_marginEnd="45dp"
         android:layout_marginRight="45dp"
         android:text="@string/review_data"
-        android:textSize="@dimen/button_text_size" />
+        android:textSize="@dimen/button_text_size"
+        android:drawableStart="@drawable/review_ic"
+        android:drawableLeft="@drawable/review_ic"/>
 
     <TextView
         android:id="@+id/text2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/send_data"
-        android:layout_marginTop="30dp"
+        android:layout_below="@+id/hello_user"
+        android:layout_marginTop="15dp"
         android:text="@string/form_format"
         android:textSize="18sp"
         android:textColor="?primaryTextColor"
@@ -101,12 +90,14 @@
         style="@style/CustomButtonStyle"
         android:layout_width="@dimen/button_width"
         android:layout_height="@dimen/button_height"
-        android:layout_alignStart="@+id/enter_data"
         android:layout_alignLeft="@+id/enter_data"
+        android:layout_alignStart="@+id/enter_data"
         android:layout_below="@+id/enter_data"
         android:layout_marginTop="15dp"
         android:text="@string/send_data"
-        android:textSize="@dimen/button_text_size" />
+        android:textSize="@dimen/button_text_size"
+        android:drawableStart="@drawable/send_data_ic"
+        android:drawableLeft="@drawable/send_data_ic"/>
 
     <Button
         android:id="@+id/view_sent_forms"
@@ -118,7 +109,9 @@
         android:layout_alignTop="@+id/send_data"
         android:layout_below="@+id/review_data"
         android:text="@string/view_sent_forms"
-        android:textSize="@dimen/button_text_size" />
+        android:textSize="@dimen/button_text_size"
+        android:drawableStart="@drawable/view_sent_ic"
+        android:drawableLeft="@drawable/view_sent_ic"/>
 
     <Button
         android:id="@+id/get_forms"
@@ -130,7 +123,9 @@
         android:layout_below="@+id/text2"
         android:layout_marginTop="15dp"
         android:text="@string/get_forms"
-        android:textSize="@dimen/button_text_size" />
+        android:textSize="@dimen/button_text_size"
+        android:drawableStart="@drawable/get_form_ic"
+        android:drawableLeft="@drawable/get_form_ic"/>
 
     <Button
         android:id="@+id/manage_forms"
@@ -141,7 +136,9 @@
         android:layout_alignRight="@+id/view_sent_forms"
         android:layout_alignTop="@+id/get_forms"
         android:text="@string/manage_files"
-        android:textSize="@dimen/button_text_size" />
+        android:textSize="@dimen/button_text_size"
+        android:drawableStart="@drawable/manage_form_ic"
+        android:drawableLeft="@drawable/manage_form_ic"/>
 
 
 </RelativeLayout>
