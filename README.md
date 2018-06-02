@@ -1,13 +1,13 @@
-# ODK Collect
+# SRISTI Sanshodh Collect
 ![Platform](https://img.shields.io/badge/platform-Android-blue.svg)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 [![Build status](https://circleci.com/gh/opendatakit/collect.svg?style=shield&circle-token=:circle-token)](https://circleci.com/gh/opendatakit/collect)
 [![codecov.io](https://codecov.io/github/opendatakit/collect/branch/master/graph/badge.svg)](https://codecov.io/github/opendatakit/collect)
 [![Slack status](http://slack.opendatakit.org/badge.svg)](http://slack.opendatakit.org)
 
-ODK Collect is an Android app for filling out forms. It is designed to be used in resource-constrained environments with challenges such as unreliable connectivity or power infrastructure. ODK Collect is part of Open Data Kit (ODK), a free and open-source set of tools which help organizations author, field, and manage mobile data collection solutions. Learn more about the Open Data Kit project and its history [here](https://opendatakit.org/about/) and read about example ODK deployments [here](https://opendatakit.org/about/deployments/).
+SRISTI Sanshodh Collect is an Android app for filling out forms. It is designed to be used in resource-constrained environments with challenges such as unreliable connectivity or power infrastructure. SRISTI Sanshodh Collect is part of Open Data Kit (ODK), a free and open-source set of tools which help organizations author, field, and manage mobile data collection solutions. Learn more about the Open Data Kit project and its history [here](https://opendatakit.org/about/) and read about example ODK deployments [here](https://opendatakit.org/about/deployments/).
 
-ODK Collect renders forms that are compliant with the [ODK XForms standard](http://opendatakit.github.io/xforms-spec/), a subset of the [XForms 1.1 standard](https://www.w3.org/TR/xforms/) with some extensions. The form parsing is done by the [JavaRosa library](https://github.com/opendatakit/javarosa) which Collect includes as a dependency.
+SRISTI Sanshodh Collect renders forms that are compliant with the [ODK XForms standard](http://opendatakit.github.io/xforms-spec/), a subset of the [XForms 1.1 standard](https://www.w3.org/TR/xforms/) with some extensions. The form parsing is done by the [JavaRosa library](https://github.com/opendatakit/javarosa) which Collect includes as a dependency.
 
 ## Table of Contents
 * [Learn more about ODK Collect](#learn-more-about-odk-collect)
@@ -61,7 +61,7 @@ When you first run Collect, it is set to download forms from [https://opendataki
 	adb push my_form.xml /sdcard/odk/forms/
 	```
 
-1. Launch ODK Collect and tap `Fill Blank Form`. The new form will be there.
+1. Launch SRISTI Sanshodh Collect and tap `Fill Blank Form`. The new form will be there.
 
 ## Using APIs for local development
 
@@ -108,9 +108,9 @@ implementation (project(path: ':javarosa-master')) {
 	```	
  
 ## Contributing code
-Any and all contributions to the project are welcome. ODK Collect is used across the world primarily by organizations with a social purpose so you can have real impact!
+Any and all contributions to the project are welcome. SRISTI Sanshodh Collect is used primarily by organizations with a social purpose so you can have real impact!
 
-Issues tagged as [good first issue](https://github.com/opendatakit/collect/labels/good%20first%20issue) should be a good place to start. There are also currently many issues tagged as [needs reproduction](https://github.com/opendatakit/collect/labels/needs%20reproduction) which need someone to try to reproduce them with the current version of ODK Collect and comment on the issue with their findings.
+Issues tagged as [good first issue](https://github.com/opendatakit/collect/labels/good%20first%20issue) should be a good place to start. There are also currently many issues tagged as [needs reproduction](https://github.com/opendatakit/collect/labels/needs%20reproduction) which need someone to try to reproduce them with the current version of SRISTI Sanshodh Collect and comment on the issue with their findings.
 
 If you're ready to contribute code, see [the contribution guide](CONTRIBUTING.md).
 
