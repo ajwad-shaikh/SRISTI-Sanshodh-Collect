@@ -125,7 +125,8 @@ the specific language governing permissions and limitations under the License.
         </activity>
         <activity
             android:name=".activities.LoginActivity"
-            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen">
+            android:theme="@android:style/Theme.Holo.NoActionBar.Fullscreen"
+            android:noHistory="true">
         </activity>
 
         <activity

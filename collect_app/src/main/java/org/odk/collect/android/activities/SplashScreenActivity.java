@@ -16,19 +16,26 @@ package org.odk.collect.android.activities;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.media.Image;
 import android.os.Bundle;
 import android.os.Handler;
+import android.widget.ImageView;
+
 import org.odk.collect.android.R;
 
 public class SplashScreenActivity extends Activity {
 
-    Handler handler;
+    ImageView iv;
+    Handler handler1, handler2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.splashscreen);
-        handler = new Handler();
-        handler.postDelayed(() -> {
+        iv = findViewById(R.id.imageView);
+        handler1 = new Handler();
+        handler1.postDelayed(() -> iv.setImageResource(R.drawable.sanshodh_splash_1), 1500);
+        handler2 = new Handler();
+        handler2.postDelayed(() -> {
             Intent intent = new Intent(SplashScreenActivity.this, LoginActivity.class);
             startActivity(intent);
             finish();
