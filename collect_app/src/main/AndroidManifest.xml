@@ -9,7 +9,7 @@ the specific language governing permissions and limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="org.odk.collect.android">
+    package="org.odk.collect.sristi">
 
     <uses-feature
         android:name="android.hardware.location"
@@ -64,10 +64,10 @@ the specific language governing permissions and limitations under the License.
     -->
 
     <permission
-        android:name="org.odk.collect.android.permission.MAPS_RECEIVE"
+        android:name="org.odk.collect.sristi.permission.MAPS_RECEIVE"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="org.odk.collect.android.permission.MAPS_RECEIVE" />
+    <uses-permission android:name="org.odk.collect.sristi.permission.MAPS_RECEIVE" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
 
     <supports-screens
@@ -88,18 +88,18 @@ the specific language governing permissions and limitations under the License.
         android:supportsRtl="true">
         <provider
             android:name=".provider.FormsProvider"
-            android:authorities="org.odk.collect.android.provider.odk.forms"
+            android:authorities="org.odk.collect.sristi.provider.odk.forms"
             android:exported="true" />
         <provider
             android:name=".provider.InstanceProvider"
-            android:authorities="org.odk.collect.android.provider.odk.instances"
+            android:authorities="org.odk.collect.sristi.provider.odk.instances"
             android:exported="true" />
 
         <activity
             android:name=".activities.MainMenuActivity"
             android:configChanges="locale|orientation|screenSize">
         <intent-filter>
-            <action android:name="org.odk.collect.android.activities.MainMenuActivity" />
+            <action android:name="org.odk.collect.sristi.activities.MainMenuActivity" />
             <category android:name="android.intent.category.DEFAULT" />
         </intent-filter>
         </activity>
@@ -241,7 +241,7 @@ the specific language governing permissions and limitations under the License.
                 <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
             </intent-filter>
             <intent-filter>
-                <action android:name="org.odk.collect.android.FormSaved" />
+                <action android:name="org.odk.collect.sristi.FormSaved" />
             </intent-filter>
         </receiver>
         <!--
