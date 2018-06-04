@@ -31,7 +31,7 @@ import org.odk.collect.android.provider.FormsProviderAPI.FormsColumns;
 import java.util.ArrayList;
 
 /**
- * Allows the user to create desktop shortcuts to any form currently avaiable to Collect
+ * Allows the user to create desktop shortcuts to any form currently available to Collect
  *
  * @author ctsims
  * @author carlhartung (modified for ODK)
@@ -119,7 +119,7 @@ public class AndroidShortcuts extends AppCompatActivity {
         Intent intent = new Intent();
         intent.putExtra(Intent.EXTRA_SHORTCUT_INTENT, shortcutIntent);
         intent.putExtra(Intent.EXTRA_SHORTCUT_NAME, name);
-        Parcelable iconResource = Intent.ShortcutIconResource.fromContext(this, R.drawable.notes);
+        Parcelable iconResource = Intent.ShortcutIconResource.fromContext(this, R.drawable.icon_sanshodh);
         intent.putExtra(Intent.EXTRA_SHORTCUT_ICON_RESOURCE, iconResource);
 
         // Now, return the result to the launcher

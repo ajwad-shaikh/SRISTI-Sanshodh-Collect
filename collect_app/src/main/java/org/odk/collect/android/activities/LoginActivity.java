@@ -164,5 +164,4 @@ public class LoginActivity extends Activity implements View.OnClickListener {
             }
     }
 
-    // TODO: Configure Intent to give account name as string output. Refer Page 401 of ODK Documentation
 }

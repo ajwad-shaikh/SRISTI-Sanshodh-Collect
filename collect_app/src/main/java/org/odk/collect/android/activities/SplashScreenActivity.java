@@ -19,6 +19,7 @@ import android.content.Intent;
 import android.media.Image;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.TypedValue;
 import android.widget.ImageView;
 
 import org.odk.collect.android.R;
