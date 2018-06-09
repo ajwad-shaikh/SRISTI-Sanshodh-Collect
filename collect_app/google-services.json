@@ -1,35 +1,68 @@
 {
   "project_info": {
-    "project_number": "322300403941",
-    "project_id": "api-project-322300403941"
+    "project_number": "332722387534",
+    "firebase_url": "https://sanshodh-collect.firebaseio.com",
+    "project_id": "sanshodh-collect",
+    "storage_bucket": "sanshodh-collect.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:322300403941:android:5e1d7c3c296329e8",
+        "mobilesdk_app_id": "1:332722387534:android:1bb390e3066631cd",
         "android_client_info": {
-          "package_name": "org.odk.collect.android"
+          "package_name": "org.sristi.sanshodh.collect"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "332722387534-b6mr1lfgk6oh8hrmbe1l5htef78no222.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.sristi.sanshodh.collect",
+            "certificate_hash": "c40fb988535d83d401d9ae04b9c82c3ac076a878"
+          }
+        },
+        {
+          "client_id": "332722387534-uam0378jfdctl1qjocli6bmf1kvja8el.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "332722387534-2bget2dco79uoa1rhbjbo5hcj9ngbb6m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.sristi.sanshodh.collect",
+            "certificate_hash": "59d553d369f51fbd18c38cb451262b14877f5c91"
+          }
+        },
+        {
+          "client_id": "332722387534-k293hj94tuan60tsvvmfma0ltt3rkmtv.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "332722387534-k293hj94tuan60tsvvmfma0ltt3rkmtv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
-          "current_key": "AIzaSyDzdzuFvfI_BgaMAbIOBpfrVG3AIwhGIP8"
+          "current_key": "AIzaSyDgp934Cikum-iUTWQO5pksLM9JnoWZGrA"
         }
       ],
       "services": {
         "analytics_service": {
-          "status": 2,
-          "analytics_property": {
-            "tracking_id": "UA-91951913-1"
-          }
+          "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "332722387534-uam0378jfdctl1qjocli6bmf1kvja8el.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
-          "status": 1
+          "status": 2
         }
       }
     }

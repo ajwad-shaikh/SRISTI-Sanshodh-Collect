@@ -7,7 +7,7 @@
     android:paddingLeft="@dimen/margin_large"
     android:paddingRight="@dimen/margin_large"
     android:paddingTop="@dimen/margin_large"
-    tools:context="org.odk.collect.android.activities.SplashScreenActivity"
+    tools:context="org.odk.collect.sristi.activities.SplashScreenActivity"
     android:background="#FFFFFF">
 
     <ImageView
